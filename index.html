@@ -542,7 +542,7 @@ button.light, button.dark {
 
 .webpage-sample{
     width: 100%;
-    min-height: 110svh;
+    min-height: 80svh;
     padding: 20px;
     box-sizing: border-box;
     overflow: hidden;
@@ -621,6 +621,44 @@ button.light, button.dark {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 3px rgba(0, 191, 255, 0.45), 0 0 7px rgba(0, 191, 255, 0.3);
     box-shadow: 6px 6px 0 var(--secondary-color);
+}
+
+/*Section4 */
+
+.sec4 {
+    position: relative;
+    min-height: 100vh;
+    padding: 100px 150px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.flex-container {
+    margin-top: 50px;
+    display: flex; 
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    opacity: 0.7;
+    transition: 0.5s ease-in;
+}
+
+.poster-iframe {
+    height: 388px;
 }
 
 
@@ -716,8 +754,8 @@ button.light, button.dark {
 <body>
 
 <div class="theme">
-    <button class="light" id="theme"><span class="material-symbols-outlined">bedtime</span></button>
-    <button class="dark" id="theme"><span class="material-symbols-outlined">brightness_7</span></button>
+    <button class="light" id="theme"><span class="material-symbols-outlined">brightness_7</span></button>
+    <button class="dark" id="theme"><span class="material-symbols-outlined">bedtime</span></button>
 </div>
 
 <section class="dashboard">
@@ -741,10 +779,10 @@ button.light, button.dark {
                 <a href="#graphicdesign">Graphic Design</a>
 
                 <div class="dropdown-menu">
-                    <a href="#graphic4">School Pubmats</a>
-                    <a href="#graphic4">Posters</a>
-                    <a href="#graphic4">Shirt Designs</a>
-                    <a href="#graphic4">Logos & Emblems</a>
+                    <a href="#pubmat">School Pubmats</a>
+                    <a href="#poster">Posters</a>
+                    <a href="#shirt">Shirt Designs</a>
+                    <a href="#name">Logos & Emblems</a>
                 </div>
             </div>
 
@@ -947,6 +985,63 @@ button.light, button.dark {
             
         </div>
     </div>
+
+</section>
+
+<section class="sec4">
+
+    <section class="sec4-pub" id="pubmat">
+        <h2 class="h2-title">Publication Materials</h2>
+        <div class="flex-container">
+            <img src="pics/pubmat/0.png" alt="">
+            <img src="pics/pubmat/ARAWNGKALAYAAN.png" alt="">
+            <img src="pics/pubmat/GASPRIDEMONTHPOST2025.png" alt="">
+            <img src="pics/pubmat/GCOPOST1.png" alt="">
+            <img src="pics/pubmat/GCOPOST4.png" alt="">
+            <img src="pics/pubmat/POST1.png" alt="">
+			<img src="pics/pubmat/GASVALENTNTES.png" alt="">
+            <img src="pics/pubmat/GASXMAS.png" alt="XMAS">
+        </div>
+        <br>
+
+    </section>
+
+    <section class="sec4-pub" id="poster">
+        <h2 class="h2-title">Posters</h2>
+        <div class="flex-container">
+            <img class="poster-iframe" src="pics/poster/EVANGELION.png" alt="">
+            <img class="poster-iframe" src="pics/poster/SWEETVENOM.png" alt="">
+            <img class="poster-iframe" src="pics/poster/NONLINEAR.png" alt="">
+            <img class="poster-iframe" src="pics/poster/SODAPOP.png" alt="">
+        </div>
+        <br>
+
+    </section>
+
+    <section class="sec4-pub" id="shirt">
+        <h2 class="h2-title">Shirt Designs</h2>
+        <div class="flex-container">
+            <img src="pics/shirt/Artboard1Mockup3.jpg" alt="">
+            <img src="pics/shirt/Artboard1Mockup2.jpg" alt="">
+            <img src="pics/shirt/artboard.jpg" alt="">
+            <img src="pics/shirt/NewProject.jpg" alt="">
+        </div>
+        <br>
+
+    </section>
+
+    <section class="sec4-pub" id="name">
+        <h2 class="h2-title">Logos and Emblems</h2>
+        <div class="flex-container">
+            <img src="pics/emblem/honey.png" alt="">
+            <img src="pics/emblem/JIYUU1.png" alt="">
+            <img src="pics/emblem/MATCHU.png" alt="">
+            <img src="pics/emblem/ORSHN.png" alt="">
+        </div>
+        <br>
+
+    </section>
+
 
 </section>
 
