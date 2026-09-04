@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    
     <link rel="icon" type="image/png" href="/myportfolio/logo/ORIONLOGO2.png">
     <title>Leon Emano - Art Portfolio</title>
 </head>
@@ -636,6 +639,90 @@ button.light, button.dark {
     gap: 10rem;
 }
 
+.design {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.design-child {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.design-list {
+    display:flex;
+    height: 15vh;   
+    width: 30%;
+    flex-direction: row;
+    
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 0 var(--primary-color);
+    border-color: var(--primary-color);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.design-list p {
+    font-size: 0.9rem;
+    padding-right: 10px;
+}
+
+.design .p-title{
+    font-size: 1.8rem;
+    font-weight: bolder;  
+    letter-spacing: -1px;
+    color: var(--primary-color);
+    margin-bottom: -3px;
+}
+
+.design .p-title1{
+    font-size: 1.8rem;
+    font-weight: bolder;  
+    letter-spacing: -1px;
+    color: var(--primary-color);
+    margin-bottom: -3px;
+    padding-bottom: 40px;
+}
+
+.design .p-gray{
+    font-size: 0.9rem;
+    font-weight: bolder;  
+    letter-spacing: -1px;
+    color:var(--text-color);
+    margin-bottom: 5px;
+}
+
+
+.design i {
+    font-size: 5rem;
+    transform: translateY(7px);
+    padding: 30px;
+    color: var(--primary-color);
+}
+
+.design .icon-desc{
+    text-align: start;
+}
+
+
+
+
+
+
+
+
 .flex-container {
     margin-top: 50px;
     display: flex; 
@@ -687,7 +774,7 @@ img {
         margin-top: 0;
     }
 
-    .sec2 {
+    .sec2, .sec3,.sec4{
         padding: 20px 30px ;
         flex-direction: column;
         gap: 20px; /* add gap between sections */
@@ -714,22 +801,20 @@ img {
         gap: 20px; /* add gap between academic info */
     }
 
-    .skills-child, .core-child {
+    .skills-child, .core-child, .design-child {
         flex-direction: column;
         gap: 20px; /* add gap between skills */
     }
 
-    .skill-list, .core-list{
+    .skill-list, .core-list, .design-list{
         width: 100%; /* full width for mobile */
     }
 
-    .sec3{
-        padding: 20px 30px ;
-        flex-direction: column;
-        gap: 20px; /* add gap between sections */
+    .p-ov{
+        font-size: 1.4rem;
     }
 
-    .p-ov{
+    .design .p-title{
         font-size: 1.4rem;
     }
 
@@ -989,6 +1074,71 @@ img {
 </section>
 
 <section class="sec4">
+
+    <div class="design">
+        <h2 class="h2-title">Graphic Design</h2>
+        <p class="p-title1" style="text-align: center;">With my passion for arts and design, i continue to strive to improve my skills and knowledge in different creative aspects.</p>
+        <br>
+        <div class="design-child">
+
+            <div class="design-list">
+                <i class="fi fi-brands-illustrator"></i>
+                <div class="icon-desc">
+                    <p class="p-title">Adobe Illustrator</p>
+                    <p class="p-gray">▰▰▰▰▰▰▰▰▰▱</p>
+                    <p>Mostly used to make any design such as illustrations, logos, etc.</p>
+                </div>
+            </div>
+
+            <div class="design-list">
+                <i class="fi fi-sr-circle-c"></i>
+                <div class="icon-desc">
+                    <p class="p-title">Canva</p>
+                    <p class="p-gray">▰▰▰▰▰▰▰▰▱▱</p>
+                    <p>Convenient software to make on-the-go designs and edits</p>
+                </div>
+            </div>
+
+            <div class="design-list">
+                <i class="fi fi-sr-square-k"></i>
+                <div class="icon-desc">
+                    <p class="p-title">Kittl</p>
+                    <p class="p-gray">▰▰▰▱▱▱▱▱▱▱</p>
+                    <p>Mostly used to make add overlay options and mockups.</p>
+                </div>
+            </div>
+
+            <div class="design-list">
+                <i class="fi fi-brands-photoshop"></i>
+                <div class="icon-desc">
+                    <p class="p-title">Adobe Photoshop</p>
+                    <p class="p-gray">▰▰▰▰▰▰▱▱▱▱</p>
+                    <p>Used to refine designs and add complex editing tools</p>
+                </div>
+            </div>
+
+            <div class="design-list">
+                <i class="fi fi-sr-square-p"></i>
+                <div class="icon-desc">
+                    <p class="p-title">Photopea</p>
+                    <p class="p-gray">▰▰▰▰▰▰▱▱▱▱</p>
+                    <p>Convenient software to make on-the-go designs and edits</p>
+                </div>
+            </div>
+
+            <div class="design-list">
+                <i class="fi fi-brands-figma"></i>
+                <div class="icon-desc">
+                    <p class="p-title">Figma</p>
+                    <p class="p-gray">▰▰▰▰▰▱▱▱▱▱</p>
+                    <p>Used to create and organize wireframes and flow</p>
+                </div>
+            </div>
+            
+
+        </div>
+
+    
 
     <section class="sec4-pub" id="pubmat">
         <h2 class="h2-title">Publication Materials</h2>
